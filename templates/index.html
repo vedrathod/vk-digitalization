@@ -1,0 +1,4 @@
+{% extends "base.html" %}{% block title %}VK Digitalization{% endblock %}{% block content %}
+<section class="hero"><div><small>DIGITALIZATION • DATA • RECORDS</small><h1>Turning Records Into <span>Digital Solutions.</span></h1><p>Professional document digitization, data processing, scanning, OCR and digital record management.</p><a class="btn" href="{{url_for('register')}}">Customer Portal →</a></div></section>
+<section class="section"><small>OUR SERVICES</small><h2>What we do</h2><div class="grid">{% for s in services %}<article><h3>{{s}}</h3><p>Structured, accurate and scalable digitalization workflows for modern organizations.</p></article>{% endfor %}</div></section>
+<section class="dark"><h2>Customer portal</h2><p>Customers can create an account, upload project details and track updates from the VK team.</p><a class="btn light" href="{{url_for('login')}}">Login →</a></section>{% endblock %}
