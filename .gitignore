@@ -1,0 +1,5 @@
+venv/
+__pycache__/
+*.pyc
+vk_digitalization.db
+.env
